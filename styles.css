@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --white: rgb(255, 255, 255, 0.76);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+
+  background: #f69f3b;
+  background: linear-gradient(90deg, rgba(246, 159, 59, 1) 0%, rgba(231, 187, 110, 1) 78%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meme {
+  width: auto;
+  height: 400px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right: 50px;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  top: 50%;
+  left: 25%;
+  transform: translate(-40%, 25%);
+  background-color: var(--white);
+  align-self: center;
+  border-radius: 15px;
+}
+
+.details {
+  position: relative;
+  margin-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details h3 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.details p {
+  color: #363636;
+  font-size: 20px;
+}
+
+.details button {
+  width: 260px;
+  height: 100px;
+  font-size: 24px;
+  color: black;
+  background-color: #f69f3b;
+  border: hidden;
+  border-radius: 15px;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.details button:hover {
+  animation-name: hover_button;
+  animation-timing-function: linear;
+}
+
+@keyframes hover_button {
+  0% {
+    width: 270px;
+    height: 110px;
+    background-color: #f69f3b;
+  }
+
+  100% {
+    background-color: rgba(231, 187, 110, 1);
+  }
+}
